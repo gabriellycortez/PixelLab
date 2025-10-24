@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar Simples</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #004aad;
+      padding: 0.8rem 2rem;
+    }
+
+    /* Logo ou nome */
+    .logo {
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* Links */
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffd700;
+    }
+
+    /* Botão opcional (chamada para ação) */
+    .btn {
+      background-color: #ffd700;
+      color: #004aad;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e6c200;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">MinhaMarca</a>
+    <ul class="nav-links">
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Contato</a></li>
+      <li><a href="#" class="btn">Entrar</a></li>
+    </ul>
+  </header>
+
+  <main style="padding: 2rem;">
+    <h1>Bem-vindo!</h1>
+    <p>Esta é uma página de exemplo com uma navbar simples feita com HTML e CSS.</p>
+  </main>
+
+</body>
+</html>
